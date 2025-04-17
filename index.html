@@ -1,99 +1,453 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pencil Digital - Crafting Digital Experiences</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pencil | Web & Mobile Development Agency</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
 
-    <header id="header">
-        <div class="container">
-            <div class="logo">Pencil Digital</div>
-            <nav id="main-nav">
-                <ul>
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <button id="menu-toggle" aria-label="Toggle Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <span class="logo-text">Pencil</span>
+        <div class="logo-dot"></div>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#work" class="nav-link">Work</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="menu-toggle">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
         </div>
-    </header>
+      </nav>
+    </div>
+  </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="hero" class="hero-section">
-            <div class="container">
-                <h1>Crafting Digital Experiences</h1>
-                <p class="subtitle">From concept to launch, we build beautiful and functional websites, software, and mobile apps.</p>
-                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+  <div class="mobile-menu">
+    <ul>
+      <li><a href="#services" class="mobile-link">Services</a></li>
+      <li><a href="#work" class="mobile-link">Work</a></li>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="reveal-text">We craft digital <span class="highlight">experiences</span> that matter</h1>
+          <p class="subtitle reveal-text-delay">Web development, mobile apps, design, and consultation services that transform your ideas into reality.</p>
+          <div class="cta-container reveal-text-delay">
+            <a href="#contact" class="cta-button">Start a project</a>
+            <a href="#work" class="secondary-button">See our work</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="shape shape-1"></div>
+          <div class="shape shape-2"></div>
+          <div class="shape shape-3"></div>
+         
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+        <div class="arrow">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Our Services</span>
+          <h2>Expertise that drives <span class="highlight">results</span></h2>
+        </div>
+        <div class="services-grid">
+          <div class="service-card" data-service="web">
+            <div class="service-icon">
+              <i class="fas fa-code"></i>
             </div>
-        </section>
+            <h3>Web Development</h3>
+            <p>Custom websites and web applications built with cutting-edge technologies and best practices.</p>
+            <a href="#contact" class="learn-more">Learn more <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="service-card" data-service="mobile">
+            <div class="service-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3>Mobile App Development</h3>
+            <p>Native and cross-platform mobile applications that deliver exceptional user experiences.</p>
+            <a href="#contact" class="learn-more">Learn more <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="service-card" data-service="design">
+            <div class="service-icon">
+              <i class="fas fa-pencil-ruler"></i>
+            </div>
+            <h3>Web Design</h3>
+            <p>Visually stunning, user-centered designs that engage your audience and strengthen your brand.</p>
+            <a href="#contact" class="learn-more"><i class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="service-card" data-service="product">
+            <div class="service-icon">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <h3>Product Design</h3>
+            <p>End-to-end product design services from concept to launch, focused on solving real user problems.</p>
+            <a href="#contact" class="learn-more">Learn more <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="service-card" data-service="consultation">
+            <div class="service-icon">
+              <i class="fas fa-comments"></i>
+            </div>
+            <h3>Software Consultation</h3>
+            <p>Expert guidance on technology strategy, architecture, and implementation to maximize your ROI.</p>
+            <a href="#contact" class="learn-more">Learn more <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- Services Section -->
-        <section id="services" class="services-section">
-            <div class="container">
-                <h2>Our Services</h2>
-                <div class="service-grid">
-                    <div class="service-item">
-                        <div class="service-icon">🌐</div>
-                        <h3>Web Design</h3>
-                        <p>Creating stunning, user-friendly interfaces that capture attention and drive engagement.</p>
-                    </div>
-                    <div class="service-item">
-                        <div class="service-icon">💻</div>
-                        <h3>Web Development</h3>
-                        <p>Building robust, scalable, and high-performance websites using modern technologies.</p>
-                    </div>
-                    <div class="service-item">
-                        <div class="service-icon">⚙️</div>
-                        <h3>Software Development</h3>
-                        <p>Developing custom software solutions tailored to your unique business needs.</p>
-                    </div>
-                    <div class="service-item">
-                        <div class="service-icon">📱</div>
-                        <h3>Mobile App Development</h3>
-                        <p>Designing and developing intuitive mobile applications for both iOS and Android platforms.</p>
-                    </div>
+    <!-- Work Section -->
+    <section id="work" class="work">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Our Work</span>
+          <h2>Projects that make an <span class="highlight">impact</span></h2>
+        </div>
+        <div class="work-filter">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="mobile">Mobile</button>
+          <button class="filter-btn" data-filter="design">Design</button>
+        </div>
+        <div class="work-grid">
+          <div class="work-item" data-category="web design">
+            <div class="work-image">
+              <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=800&auto=format&fit=crop" alt="E-commerce website project">
+              <div class="work-overlay">
+                <div class="work-info">
+                  <h3>Luxury E-commerce Platform</h3>
+                  <p>Web Development, UI/UX Design</p>
+                  <a href="#" class="view-project">View Project</a>
                 </div>
+              </div>
             </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="about-section">
-            <div class="container">
-                <h2>About Pencil Digital</h2>
-                <p>We are a passionate team of designers and developers dedicated to bringing your digital ideas to life. With offices in both <strong>Abuja</strong> and <strong>New York</strong>, we blend global perspectives with local insights to deliver exceptional results.</p>
-                <p>Our focus is on quality, collaboration, and creating digital products that not only look great but also achieve your business goals.</p>
+          </div>
+          <div class="work-item" data-category="mobile">
+            <div class="work-image">
+              <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=800&auto=format&fit=crop" alt="Fitness app project">
+              <div class="work-overlay">
+                <div class="work-info">
+                  <h3>Fitness Tracking App</h3>
+                  <p>Mobile Development, Product Design</p>
+                  <a href="#" class="view-project">View Project</a>
+                </div>
+              </div>
             </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section">
-            <div class="container">
-                <h2>Let's Build Something Great Together</h2>
-                <p>Ready to start your next project? Reach out to us!</p>
-                <p>📍 Locations: Abuja & New York</p>
-                <p>✉️ Email us at: <a href="mailto:business@pencildigitals.com">business@pencildigitals.com</a></p>
-                <a href="mailto:business@pencildigitals.com" class="btn btn-secondary">Send Us An Email</a>
+          </div>
+          <div class="work-item" data-category="web">
+            <div class="work-image">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop" alt="SaaS dashboard project">
+              <div class="work-overlay">
+                <div class="work-info">
+                  <h3>SaaS Analytics Dashboard</h3>
+                  <p>Web Development, UI/UX Design</p>
+                  <a href="#" class="view-project">View Project</a>
+                </div>
+              </div>
             </div>
-        </section>
-    </main>
-
-    <footer id="footer">
-        <div class="container">
-            <p>© 2023 Pencil Digital. All Rights Reserved.</p>
+          </div>
+          <div class="work-item" data-category="design">
+            <div class="work-image">
+              <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=800&auto=format&fit=crop" alt="Brand identity project">
+              <div class="work-overlay">
+                <div class="work-info">
+                  <h3>Tech Startup Branding</h3>
+                  <p>Brand Identity, Web Design</p>
+                  <a href="#" class="view-project">View Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="work-item" data-category="mobile design">
+            <div class="work-image">
+              <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=800&auto=format&fit=crop" alt="Banking app project">
+              <div class="work-overlay">
+                <div class="work-info">
+                  <h3>Mobile Banking Application</h3>
+                  <p>Mobile Development, UX Design</p>
+                  <a href="#" class="view-project">View Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="work-item" data-category="web">
+            <div class="work-image">
+              <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=800&auto=format&fit=crop" alt="Real estate platform project">
+              <div class="work-overlay">
+                <div class="work-info">
+                  <h3>Real Estate Platform</h3>
+                  <p>Web Development, UI Design</p>
+                  <a href="#" class="view-project">View Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </footer>
+        <div class="view-all-container">
+          <a href="#" class="view-all-btn">View all projects <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
 
-    <script src="script.js"></script>
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <span class="section-tag">About Us</span>
+            <h2>We're a team of <span class="highlight">creative problem-solvers</span></h2>
+            <p>Founded in 2015, Pencil has grown from a small design studio to a full-service digital agency. We combine technical expertise with creative thinking to deliver solutions that exceed expectations.</p>
+            <p>Our approach is collaborative and transparent. We work closely with our clients to understand their goals and challenges, then craft tailored solutions that drive real business results.</p>
+            <div class="stats-container">
+              <div class="stat">
+                <span class="stat-number" data-count="150">0</span>
+                <span class="stat-label">Projects Completed</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number" data-count="45">0</span>
+                <span class="stat-label">Happy Clients</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number" data-count="12">0</span>
+                <span class="stat-label">Team Members</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=600&auto=format&fit=crop" alt="Pencil team at work">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Testimonials</span>
+          <h2>What our clients <span class="highlight">say about us</span></h2>
+        </div>
+        <div class="testimonial-slider">
+          <div class="testimonial-track">
+            <div class="testimonial-slide">
+              <div class="testimonial-content">
+                <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                <p>"Pencil transformed our outdated website into a modern, user-friendly platform that has significantly increased our conversion rates. Their team was professional, responsive, and delivered beyond our expectations."</p>
+                <div class="testimonial-author">
+                  <div class="author-image">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson">
+                  </div>
+                  <div class="author-info">
+                    <h4>Sarah Johnson</h4>
+                    <p>CEO, TechStart Inc.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-slide">
+              <div class="testimonial-content">
+                <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                <p>"Working with Pencil on our mobile app was a game-changer for our business. Their attention to detail and innovative approach resulted in an app that our customers love using. We've seen a 200% increase in engagement since launch."</p>
+                <div class="testimonial-author">
+                  <div class="author-image">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen">
+                  </div>
+                  <div class="author-info">
+                    <h4>Michael Chen</h4>
+                    <p>Founder, FitLife App</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-slide">
+              <div class="testimonial-content">
+                <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                <p>"The team at Pencil provided invaluable consultation that helped us navigate complex technical decisions. Their expertise saved us time and money while ensuring we built a scalable solution for our growing business."</p>
+                <div class="testimonial-author">
+                  <div class="author-image">
+                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emma Rodriguez">
+                  </div>
+                  <div class="author-info">
+                    <h4>Emma Rodriguez</h4>
+                    <p>CTO, GrowthMetrics</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-controls">
+            <button class="testimonial-prev"><i class="fas fa-arrow-left"></i></button>
+            <div class="testimonial-dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            <button class="testimonial-next"><i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact-content">
+          <div class="contact-info">
+            <span class="section-tag">Get In Touch</span>
+            <h2>Ready to start your <span class="highlight">project</span>?</h2>
+            <p>Let's discuss how we can help bring your vision to life. Fill out the form, and we'll get back to you within 24 hours.</p>
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>Email</h4>
+                  <p>business@pencildigitals.com</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-phone-alt"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>Phone</h4>
+                  <p>+1 (555) 123-4567</p>
+                  <p>+234-915-621-6487</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                
+                 <div class="contact-text">
+                  <h4>Location</h4>
+                  <p>123 Design Street, Creative City.</p>
+                  <p>123 Design Street, Creative City.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form-container">
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="service">Service Interested In</label>
+                <select id="service" name="service">
+                  <option value="">Select a service</option>
+                  <option value="web-development">Web Development</option>
+                  <option value="mobile-development">Mobile App Development</option>
+                  <option value="web-design">Web Design</option>
+                  <option value="product-design">Product Design</option>
+                  <option value="consultation">Software Consultation</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="logo-text">Pencil</span>
+          <div class="logo-dot"></div>
+          <p>Crafting digital experiences that matter.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Mobile App Development</a></li>
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">Product Design</a></li>
+              <li><a href="#">Software Consultation</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#work">Our Work</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Connect</h4>
+            <div class="social-links">
+              <a href="https://x.com/Pencil_digitals" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
+            </div>
+            <div class="newsletter">
+              <h4>Subscribe to our newsletter</h4>
+              <form class="newsletter-form">
+                <input type="email" placeholder="Your email address">
+                <button type="submit"><i class="fas fa-paper-plane"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Pencil Design Agency. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
